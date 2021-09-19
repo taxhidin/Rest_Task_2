@@ -16,7 +16,7 @@ public class UserResource {
 
 
     @GET
-    @Path("addUpNumbers")
+    @Path("/addUpNumbers")
     @Produces(MediaType.APPLICATION_JSON)
 
     public Response getUsers() {
