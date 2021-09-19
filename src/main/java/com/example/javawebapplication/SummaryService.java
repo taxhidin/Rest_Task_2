@@ -1,7 +1,6 @@
 package com.example.javawebapplication;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class SummaryService {
 
