@@ -12,7 +12,7 @@ import org.junit.Test;
 
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.core.Response;
-/*
+
 
 public class UserResourceTest  {
 
@@ -33,7 +33,7 @@ public class UserResourceTest  {
 
 
 }
-*/
+
 
 
 //second method
