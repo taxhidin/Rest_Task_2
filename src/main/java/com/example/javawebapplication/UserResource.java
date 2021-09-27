@@ -1,5 +1,7 @@
 package com.example.javawebapplication;
 
+import org.jboss.resteasy.annotations.jaxrs.PathParam;
+
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Produces;
@@ -11,13 +13,16 @@ import javax.ws.rs.core.Response;
 @Path("/api")
 public class UserResource {
 
+
     @Inject
     SummaryService summaryService;
 
-
     @GET
+
     @Path("/addUpNumbers")
+
     @Produces(MediaType.APPLICATION_JSON)
+
 
     public Response getUsers() {
 
@@ -29,9 +34,16 @@ public class UserResource {
         }
 
         return null;
+
     }
 
+    public Response printMessage(@PathParam String msg) {
 
+        String result = "Restful example : " + msg;
+
+        return Response.status(200).entity(result).build();
+
+    }
 
 
 }
