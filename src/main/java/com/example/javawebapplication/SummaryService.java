@@ -4,7 +4,8 @@ package com.example.javawebapplication;
 
 public class SummaryService {
 
-    User user = new User();
+    User user = new User(1,2,3,4,5,6);
+    
 
 
     public int result (){
